@@ -5,7 +5,7 @@ import { Outlet } from "react-router";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="main-layout">
       <Navbar />
       <Outlet />
       <Footer />
