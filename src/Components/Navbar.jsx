@@ -6,7 +6,7 @@ import gitLogo from "../assets/github-icon.png";
 const Navbar = () => {
   return (
     <div className="navbar px-16 py-4 bg-white border-b-[#E9E9E9] border-b-1">
-      <div className="navbar-start">
+      <div className="navbar-start gap-5">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -30,17 +30,17 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <NavLink to="/home" className="text-lg">
+              <NavLink to="/home" className="text-lg font-semibold">
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="/apps" className="text-lg">
+              <NavLink to="/apps" className="text-lg font-semibold">
                 Apps
               </NavLink>
             </li>
             <li>
-              <NavLink to="/installation" className="text-lg">
+              <NavLink to="/installation" className="text-lg font-semibold">
                 Installation
               </NavLink>
             </li>
@@ -54,19 +54,19 @@ const Navbar = () => {
         </NavLink>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal gap-8">
           <li>
-            <NavLink to="/home" className="text-lg">
+            <NavLink to="/home" className="text-lg font-semibold">
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/apps" className="text-lg">
+            <NavLink to="/apps" className="text-lg font-semibold">
               Apps
             </NavLink>
           </li>
           <li>
-            <NavLink to="/installation" className="text-lg">
+            <NavLink to="/installation" className="text-lg font-semibold">
               Installation
             </NavLink>
           </li>
@@ -74,10 +74,15 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <div className="inline-block bg-gradient-to-br from-[#632EE3] to-[#9F62FF] bg-clip px-5 py-3 rounded-lg">
-          <NavLink to="/profile" className="text-lg flex items-center gap-2">
+          <a
+            href="http://github.com/emran40989"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg flex items-center gap-2"
+          >
             <img src={gitLogo} alt="GitHub" className="w-5" />
             <h1 className="text-lg font-semibold text-white">Contribute</h1>
-          </NavLink>
+          </a>
         </div>
       </div>
     </div>
