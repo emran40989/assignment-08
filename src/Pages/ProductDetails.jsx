@@ -30,8 +30,6 @@ const AppDetails = () => {
       <span className="loading pt-20 lg: ml-[600px] loading-dots loading-xl"></span>
     );
 
-  if (!app) throw new Error("App not found");
-
   const {
     image,
     companyName,
