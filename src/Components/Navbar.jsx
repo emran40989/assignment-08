@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import logo from "../assets/logo.png";
 import gitLogo from "../assets/github-icon.png";
 
@@ -74,15 +74,11 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <div className="inline-block bg-gradient-to-br from-[#632EE3] to-[#9F62FF] bg-clip px-5 py-3 rounded-lg">
-          <a
-            href="http://github.com/emran40989"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-lg flex items-center gap-2"
+          <Link to="http://github.com/emran40989" className="text-lg flex items-center gap-2"
           >
             <img src={gitLogo} alt="GitHub" className="w-5" />
             <h1 className="text-lg font-semibold text-white">Contribute</h1>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
