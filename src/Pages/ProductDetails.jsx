@@ -39,6 +39,7 @@ const AppDetails = () => {
     reviews,
     ratings,
     description,
+    size,
   } = app || {};
 
   const handleToInstall = () => {
@@ -101,7 +102,7 @@ const AppDetails = () => {
             onClick={() => handleToInstall()}
             className="btn btn-active btn-success text-white"
           >
-            {install ? "installed" : "Install Now (291 MB)"}
+            {install ? "installed" : `Install Now (${size}MB)`}
           </button>
           <ToastContainer />
         </div>
