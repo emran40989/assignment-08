@@ -1,17 +1,14 @@
 import React from "react";
 import { Link } from "react-router";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
-import error from "../assets/error-404.png";
+import error from "../assets/App-Error.png";
 
 const ErrorPage = () => {
   return (
     <>
-      <Navbar />
       <div className="max-w-screen mx-auto w-full px-5 flex-1 justify-center my-10 flex flex-col items-center">
         <img className="text-center" src={error} alt="" />{" "}
-        <h1 className="text-4xl font-bold pb-5">Oops, page not found!</h1>
-        <p>The page you are looking for is not available.</p>
+        <h1 className="text-4xl font-bold pb-5">Oops, App is not found!</h1>
+        <p>The app you are looking for is not available.</p>
         <div className="mt-10 mx-auto">
           <Link
             to="/"
@@ -21,7 +18,6 @@ const ErrorPage = () => {
           </Link>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
