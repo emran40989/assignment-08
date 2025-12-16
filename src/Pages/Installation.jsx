@@ -46,12 +46,12 @@ const Installation = () => {
       <div className="flex flex-col text-center items-center mt-10">
         <h1 className="text-4xl text-black font-bold">Your Installed Apps</h1>
         <p className="text-[#afb4b9] pt-3">
-          Explore All Trending Apps on the Market developed by us
+          Explore All the Apps You Have Installed on Your Device
         </p>
       </div>
       <div className="flex flex-col items-center lg:flex-row justify-between my-10 ">
         <h1 className="text-2xl pb-5 lg:pb-0 font-bold">
-          this is installation: {sortedItem.length}
+          The following Apps Are Installed: {sortedItem.length}
         </h1>
         <label className="form-control w-full max-w-xs">
           <select
