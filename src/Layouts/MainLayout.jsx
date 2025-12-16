@@ -5,10 +5,13 @@ import { Outlet } from "react-router";
 
 const MainLayout = () => {
   return (
-    <div className="main-layout">
-      <Navbar />
-      <Outlet />
-      <Footer />
+    <div className="max-w-[1440px] mx-auto flex flex-col min-h-screen">
+      <Navbar></Navbar>
+      <div className="max-w-screen mx-auto w-full px-5 flex-1">
+        <Outlet />
+      </div>
+
+      <Footer></Footer>
     </div>
   );
 };

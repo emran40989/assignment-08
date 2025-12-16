@@ -1,40 +1,40 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router';
+import { Link } from "react-router";
 import logo from "../assets/logo.png";
 
 const Footer = () => {
-    return (
-        <footer className="footer footer-horizontal footer-center bg-black text-base-content rounded-xl mt-10 p-10">
-            <div className="footer sm:footer-horizontal bg-black text-white p-10">
-                <aside>
-                    <Link to='/' className="flex items-center font-bold text-[#632EE3] text-xl"><span><img src={logo} className='w-10' alt="" /></span>HERO.IO</Link>
-                </aside>
-                <nav>
-                    <h6 className="footer-title">Services</h6>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
-                </nav>
-                <nav>
-                    <h6 className="footer-title">Company</h6>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
-                </nav>
-                <nav>
-                    <h6 className="footer-title">Legal</h6>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
-                </nav>
-            </div>
-            <div className='text-white border-t-white'>
-                <p>Copyright © - All right reserved by Emran Hossen</p>
-            </div>
-        </footer>
-    );
+  return (
+    <footer className="bg-gray-950 text-gray-300 mt-20">
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+          <Link to="/" className="flex items-center gap-3 text-white">
+            <img src={logo} alt="Hero App Logo" className="w-10" />
+            <span className="text-2xl font-bold tracking-wide">HERO</span>
+          </Link>
+
+          <p className="text-sm text-center md:text-left max-w-md">
+            HERO is a modern platform to explore powerful apps that improve
+            productivity, creativity, and performance.
+          </p>
+
+          <Link
+            to="/apps"
+            className="px-6 py-2 rounded-full bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition"
+          >
+            Explore Apps
+          </Link>
+        </div>
+
+        <div className="my-8 border-t border-gray-800" />
+
+        <div className="flex flex-col md:flex-row items-center justify-between text-sm gap-4">
+          <p>© {new Date().getFullYear()} HERO App. All rights reserved.</p>
+          <p className="text-gray-500">
+            Designed & Developed by <span className="text-white">Emran</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
